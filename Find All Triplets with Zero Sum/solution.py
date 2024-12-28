@@ -18,6 +18,7 @@ class Solution:
                             ans.append(list(sorted([arr[i][1],arr[u][1],arr[k][1]])))
                     k -= 1
                 elif arr[i][0] + arr[j][0] + arr[k][0] > 0:
+                    k -= 1
                 else:
                     j += 1
         return ans
